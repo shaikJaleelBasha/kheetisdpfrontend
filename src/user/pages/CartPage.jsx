@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Navbar from '../components/NavBar';
+import Navbar from '../../user/components/NavBar';
 import '../pages/css/CartPage.css';
 
 const CartPage = () => {
