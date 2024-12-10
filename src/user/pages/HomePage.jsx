@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './css/HomePage.css';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/NavBar';
 
 const HomePage = () => {
   const [products, setProducts] = useState([]);
