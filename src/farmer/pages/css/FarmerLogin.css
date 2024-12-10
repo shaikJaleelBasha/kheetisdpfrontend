@@ -1,0 +1,143 @@
+/* General Reset for body and html */
+
+/* Centered login container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  padding: 20px; /* Adds padding for mobile devices */
+  background-color: #4caf50; /* Green background for consistency */
+  overflow: hidden; /* Prevents any overflow */
+}
+
+/* Login Box */
+.login-box {
+  width: 100%;
+  max-width: 400px; /* Max width to keep the login form compact */
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff; /* White background for the form to contrast with green */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for a modern look */
+  overflow: hidden; /* Prevent any overflow in case of content */
+}
+
+/* Title styling */
+.login-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333; /* Dark color for the title for readability */
+  text-align: center;
+  letter-spacing: 1px; /* Slight spacing between letters for better readability */
+}
+
+/* Form Styling */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Increased gap for better spacing between form fields */
+}
+
+/* Form Group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #555; /* Dark color for labels */
+}
+
+/* Input field styling */
+.form-input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Input focus state */
+.form-input:focus {
+  border-color: #4caf50; /* Green border on focus */
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.4); /* Green glow on focus */
+}
+
+/* Submit Button Styling */
+.submit-button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50; /* Green background for button */
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
+  width: 100%; /* Full width for submit button */
+}
+
+.submit-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.submit-button:hover:not(:disabled) {
+  background-color: #388e3c; /* Darker green on hover */
+  transform: translateY(-2px); /* Subtle lift effect on hover */
+}
+
+/* Error message styling */
+.error-message {
+  color: #d9534f; /* Red color for error messages */
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-box {
+    padding: 15px;
+    width: 100%;
+  }
+
+  .login-title {
+    font-size: 20px; /* Smaller font for mobile */
+  }
+
+  .form-input {
+    font-size: 14px; /* Smaller font size for inputs */
+  }
+
+  .submit-button {
+    padding: 10px 18px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Adjust button font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .login-box {
+    padding: 15px; /* Reduced padding on mobile */
+    width: 100%;
+  }
+
+  .login-title {
+    font-size: 18px; /* Even smaller font size for header on mobile */
+    margin-bottom: 15px; /* Adjusted spacing below header */
+  }
+
+  .form-input {
+    font-size: 14px; /* Adjusted font size for smaller screens */
+  }
+
+  .submit-button {
+    padding: 10px 18px; /* Adjust padding for mobile screens */
+    font-size: 14px; /* Adjust button font size for mobile */
+  }
+}

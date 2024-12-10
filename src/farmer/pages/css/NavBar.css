@@ -1,0 +1,72 @@
+/* Navbar Styling */
+.navbar {
+    background-color: #4caf50; /* Green background for navbar */
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Ensure navbar spans full width */
+  }
+  
+  /* Branding */
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px; /* Adding a bit of space between letters for aesthetics */
+  }
+  
+  /* Navbar links container */
+  .navbar-links {
+    display: flex;
+    justify-content: flex-end; /* Align links to the right */
+    align-items: center;
+  }
+  
+  .navbar-link {
+    color: #fff; /* White text for links */
+    text-decoration: none;
+    margin-left: 20px; /* Space between each link */
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+  }
+  
+  .navbar-link:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #f8f9fa; /* Light gray color on hover for contrast */
+  }
+  
+  /* Responsive Design for smaller screens */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 10px 15px; /* Slightly less padding on smaller screens */
+    }
+  
+    .navbar-brand {
+      font-size: 20px; /* Slightly smaller brand name on mobile */
+    }
+  
+    .navbar-links {
+      display: none; /* Hide links on small screens */
+      position: absolute;
+      right: 20px;
+      top: 60px;
+      background-color: #4caf50; /* Same background color */
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  
+    .navbar-links.active {
+      display: block; /* Show links when the menu is toggled */
+    }
+  
+    .navbar-links .navbar-link {
+      margin-left: 0;
+      font-size: 18px;
+      padding: 8px;
+      display: block;
+    }
+  }
+  

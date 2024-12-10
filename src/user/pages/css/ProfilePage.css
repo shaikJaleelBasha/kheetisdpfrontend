@@ -1,0 +1,30 @@
+.profile-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-details {
+    text-align: left;
+  }
+  
+  .profile-details h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  
+  .profile-details p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .error {
+    color: red;
+    text-align: center;
+  }
+  

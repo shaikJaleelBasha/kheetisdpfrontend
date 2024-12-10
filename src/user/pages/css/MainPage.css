@@ -1,0 +1,87 @@
+/* General styles for the container */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff; /* White background for the whole page */
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Header styling */
+.header {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Button container (centering buttons) */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  width: 100%; /* Full width on smaller screens */
+}
+
+/* Button base styling */
+.button {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+/* Specific button colors */
+.farmer-button {
+  background-color: #28a745; /* Green for Farmer */
+}
+
+.user-button {
+  background-color: #007bff; /* Blue for User */
+}
+
+.admin-button {
+  background-color: #ffc107; /* Yellow for Admin */
+}
+
+/* Button hover effects */
+.button:hover {
+  transform: translateY(-3px); /* Subtle lift effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+/* Button active effect (pressing) */
+.button:active {
+  transform: translateY(1px); /* Button presses down */
+  box-shadow: none; /* Remove shadow when pressed */
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .header {
+    font-size: 28px; /* Smaller header on mobile */
+    margin-bottom: 30px;
+  }
+
+  .button-container {
+    gap: 15px; /* Less gap between buttons on small screens */
+  }
+
+  .button {
+    font-size: 16px; /* Slightly smaller text size for buttons on mobile */
+    padding: 12px; /* Slightly smaller padding */
+  }
+}

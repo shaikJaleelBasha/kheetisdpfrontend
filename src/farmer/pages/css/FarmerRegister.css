@@ -1,0 +1,172 @@
+/* General Reset for body and html */
+
+/* Centered Register Form Container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  padding: 20px; /* Adds padding for mobile devices */
+  background-color: #4caf50; /* Green background for the page */
+  width: 100%;
+}
+
+/* Register Box (Form Box) */
+.register-box {
+  width: 100%;
+  max-width: 450px; /* Max width for compact form */
+  padding: 30px;
+  border-radius: 12px;
+  background-color: #ffffff; /* White background for the form */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Add gap between form elements */
+  text-align: center;
+}
+
+/* Title Styling */
+h2 {
+  color: #4caf50; /* Green color for title */
+  font-size: 2rem; /* Larger title size */
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px; /* Medium gap between form elements */
+  width: 100%;
+  align-items: center; /* Align items to the center */
+}
+
+/* Form Input Styling */
+form input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ddd; /* Lighter border */
+  border-radius: 10px;
+  font-size: 15px; /* Slightly larger font size */
+  background-color: #f9f9f9; /* Lighter background for inputs */
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+/* Input Focus Effects */
+form input:focus {
+  border-color: #4caf50; /* Green border on focus */
+  background-color: #ffffff; /* Lighter background when focused */
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.4); /* Light green glow */
+  outline: none;
+}
+
+/* Submit Button Styling */
+form button {
+  background-color: #4caf50; /* Green background */
+  color: #fff;
+  border: none;
+  padding: 14px;
+  font-size: 15px; /* Larger font size */
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-transform: uppercase;
+  width: 100%; /* Full width for button */
+  margin-top: 10px;
+}
+
+/* Button Hover Effect */
+form button:hover {
+  background-color: #388e3c; /* Darker green on hover */
+  transform: translateY(-2px); /* Lift effect */
+}
+
+/* Success and Error Messages */
+.error-message {
+  color: #d32f2f; /* Red color for error */
+  font-size: 14px;
+  margin-bottom: 12px; /* Reduced margin for messages */
+  text-align: center;
+}
+
+.success-message {
+  color: #81c784; /* Light green color for success */
+  font-size: 14px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+/* Paragraph Styling */
+p {
+  margin-top: 20px; /* Space above the paragraph */
+  font-size: 0.9rem;
+  color: #333;
+  text-align: center;
+}
+
+/* Link Styling */
+.login-link {
+  color: #4caf50; /* Green color */
+  text-decoration: none;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .register-box {
+    max-width: 380px; /* Slightly narrower container for medium screens */
+    padding: 25px;
+  }
+
+  h2 {
+    font-size: 1.7rem; /* Smaller title font size */
+  }
+
+  form input {
+    font-size: 14px; /* Slightly smaller font size */
+    padding: 12px; /* Adjust padding for smaller screens */
+  }
+
+  form button {
+    font-size: 14px; /* Smaller button font size */
+    padding: 12px; /* Smaller button padding */
+  }
+
+  p {
+    font-size: 0.85rem; /* Adjust paragraph font size for smaller screens */
+  }
+}
+
+/* Very Small Screens (Mobile) */
+@media (max-width: 480px) {
+  .register-box {
+    max-width: 90%; /* Max width adjusted for smaller screens */
+    padding: 20px; /* Reduced padding for mobile */
+  }
+
+  h2 {
+    font-size: 1.4rem; /* Smaller title font size */
+  }
+
+  form input {
+    padding: 10px; /* Slightly smaller input padding for mobile */
+    font-size: 13px; /* Smaller font size */
+  }
+
+  form button {
+    padding: 12px; /* Consistent button padding */
+    font-size: 14px; /* Adjusted button font size */
+  }
+
+  p {
+    font-size: 0.8rem; /* Adjust paragraph font size for smaller screens */
+  }
+}

@@ -1,0 +1,93 @@
+/* src/pages/AddProductScreen/AddProductScreen.css */
+
+/* Main page container */
+.add-product-page {
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+/* Content container for the add product form */
+.add-product-content {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styling */
+.add-product-content h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Styling for the form */
+.add-product-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styling for each form group */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-group textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+/* Submit button styling */
+.submit-btn {
+  padding: 12px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+/* Styling for image preview */
+.image-preview {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.image-preview img {
+  max-width: 100%;
+  height: auto;
+  max-height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}

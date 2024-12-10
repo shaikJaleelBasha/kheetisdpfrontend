@@ -1,0 +1,82 @@
+/* OrderPage.css */
+
+.order-container {
+    padding: 20px;
+    background-color: #f8f8f8;
+    min-height: 100vh;
+  }
+  
+  .order-header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .order-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .order-item {
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-item h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .order-item p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  .order-item .order-status {
+    font-size: 14px;
+    color: #2a9d8f;
+    font-weight: bold;
+  }
+  
+  .product-list {
+    margin-top: 10px;
+  }
+  
+  .product-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+    background: #f1f1f1;
+    border-radius: 4px;
+  }
+  
+  .product-list-item img {
+    width: 50px;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .product-list-item h4 {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .product-list-item p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .total-amount {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    text-align: right;
+  }
+  
