@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import Navbar from '../components/NavBar';
+import Navbar from '../components/Navbar';
 import '../pages/css/ProfilePage.css';
 
 const ProfilePage = () => {
